@@ -22,5 +22,9 @@ function buildPackageJson() {
   const packagePath = path.resolve(__dirname, '..', 'package.json');
   const packageJson = JSON.parse(fs.readFileSync(packagePath));
   packageJson.name = 'angular-ui-router-extended';
+  const scripts = {
+    prePublishOnly: 'echo Preaparing for Publish...',
+  };
+  packageJson.scripts = scripts;
   fs.writeFileSync(outputPath, JSON.stringify(packageJson, null, 2));
 }
