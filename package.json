@@ -1,7 +1,7 @@
 {
   "name": "@uirouter/angularjs",
   "description": "State-based routing for AngularJS 1.x",
-  "version": "1.0.30",
+  "version": "1.0.32",
   "scripts": {
     "clean": "shx rm -rf lib lib-esm _doc build release *.log",
     "compile": "tsc && tsc -m es6 --outDir lib-esm && npm run fixdts",
@@ -29,7 +29,7 @@
     "debug": "npm run test:debug",
     "docs": "generate_docs",
     "docs:publish": "generate_docs && publish_docs",
-    "release": "release --deps @uirouter/core && node ./scripts/npm_angular_ui_router_release.js && node ./scripts/bower_release.js",
+    "release": "release --deps @uirouter/core && node ./scripts/npm_angular_ui_router_release.js",
     "prepublishOnly": "npm run build",
     "artifacts": "artifact_tagging"
   },
@@ -78,7 +78,7 @@
     "@uirouter/core": "6.0.8"
   },
   "peerDependencies": {
-    "angular": ">=1.2.0"
+    "angular-extended": ">=1.0.0"
   },
   "devDependencies": {
     "@types/angular": "1.6.57",
@@ -88,7 +88,7 @@
     "@typescript-eslint/eslint-plugin": "^3.7.0",
     "@typescript-eslint/parser": "^3.7.0",
     "@uirouter/publish-scripts": "2.5.5",
-    "angular": "1.8.0",
+    "angular-extended": "1.0.0",
     "dts-downlevel": "^0.4.0",
     "eslint": "^7.5.0",
     "eslint-config-prettier": "^6.11.0",
@@ -102,7 +102,7 @@
     "rollup-plugin-sourcemaps": "^0.6.2",
     "rollup-plugin-terser": "^6.1.0",
     "ts-jest": "^26.0.0",
-    "typescript": "^3.9.7"
+    "typescript": "^5.5.4"
   },
   "husky": {
     "hooks": {
