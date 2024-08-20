@@ -13,5 +13,7 @@
     "sourceMap": true,
     "inlineSources": true
   },
-  "files": ["src/index.ts", "src/legacy/stateEvents.ts", "src/legacy/resolveService.ts"]
+  "files": ["src/index.ts", "src/legacy/stateEvents.ts", "src/legacy/resolveService.ts"],
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/@types/babel__traverse"]
 }
