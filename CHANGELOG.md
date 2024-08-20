@@ -1,5 +1,6 @@
 
 
+
 ## 1.0.30 (2021-12-01)
 [Compare `@uirouter/angularjs` versions 1.0.29 and 1.0.30](https://github.com/angular-ui/ui-router/compare/1.0.29...1.0.30)
 
