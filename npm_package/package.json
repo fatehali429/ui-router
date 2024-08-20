@@ -1,5 +1,5 @@
 {
-  "name": "@uirouter/angularjs",
+  "name": "angular-ui-router-extended",
   "description": "State-based routing for AngularJS 1.x",
   "version": "1.0.0",
   "scripts": {
